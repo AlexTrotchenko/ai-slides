@@ -10,14 +10,21 @@ export const description =
 <section>
   <section>
     <h2>What is a Finite State Machine (FSM)?</h2>
-    <ul>
-      <li>
-        A mathematical model of computation that consists of a set of states and
-        transitions between those states.
-      </li>
-      <li>Used to represent systems with a finite number of states.</li>
-      <li>Well-suited for modeling complex game behaviors.</li>
-    </ul>
+    <pre><code>{`// A mathematical model of computation that consists of 
+// a set of states and transitions between those states.
+
+const fsm = {
+  states: ['idle', 'walking', 'running', 'jumping'],
+  transitions: {
+    idle: ['walking'],
+    walking: ['idle', 'running'],
+    running: ['walking', 'jumping'],
+    jumping: ['idle']
+  }
+};
+
+// Used to represent systems with a finite number of states
+// Well-suited for modeling complex game behaviors`}</code></pre>
   </section>
   <section>
     <h2>Visualizing FSMs</h2>

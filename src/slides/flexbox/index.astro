@@ -1,6 +1,4 @@
 ---
-import CSSPropertyDemo from "./components/CSSPropertyDemo.svelte";
-
 export const title = "CSS Flexbox";
 export const authors = ["Henrique Ramos"];
 export const publishedAt = "2025-01-27";
@@ -18,35 +16,42 @@ export const draft = true;
 </section>
 
 <section>
-  <CSSPropertyDemo
-    title="Simple Flexbox Container"
-    client:load
-    property="display"
-    values={["flex"]}
-  />
+  <h2>Display: flex</h2>
+  <p>The <code>display: flex</code> property creates a flex container.</p>
 </section>
 
 <section>
-  <CSSPropertyDemo
-    client:load
-    property="justify-content"
-    values={["flex-start", "center", "flex-end", "space-between", "space-around", "space-evenly"]}
-  />
+  <h2>Justify Content</h2>
+  <p>Controls alignment along the main axis:</p>
+  <ul>
+    <li><code>flex-start</code> - Items align to start</li>
+    <li><code>center</code> - Items align to center</li>
+    <li><code>flex-end</code> - Items align to end</li>
+    <li><code>space-between</code> - Equal space between items</li>
+    <li><code>space-around</code> - Equal space around items</li>
+    <li><code>space-evenly</code> - Equal space everywhere</li>
+  </ul>
 </section>
 
 <section>
-  <CSSPropertyDemo
-    client:load
-    property="align-items"
-    values={["flex-start", "center", "flex-end", "stretch"]}
-  />
+  <h2>Align Items</h2>
+  <p>Controls alignment along the cross axis:</p>
+  <ul>
+    <li><code>flex-start</code> - Items align to start</li>
+    <li><code>center</code> - Items align to center</li>
+    <li><code>flex-end</code> - Items align to end</li>
+    <li><code>stretch</code> - Items stretch to fill</li>
+  </ul>
 </section>
 
 <section>
-  <CSSPropertyDemo
-    client:load
-    property="flex-direction"
-    values={["row", "row-reverse", "column", "column-reverse"]}
-  />
+  <h2>Flex Direction</h2>
+  <p>Controls the direction of the main axis:</p>
+  <ul>
+    <li><code>row</code> - Left to right (default)</li>
+    <li><code>row-reverse</code> - Right to left</li>
+    <li><code>column</code> - Top to bottom</li>
+    <li><code>column-reverse</code> - Bottom to top</li>
+  </ul>
 </section>
 
