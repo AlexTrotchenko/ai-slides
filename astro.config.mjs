@@ -5,7 +5,7 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alextrotchenko.github.io',
-  base: '/ai-slides',
+  base: '/ai-slides/',
   output: 'static',
   integrations: [tailwindcss()],
 });
