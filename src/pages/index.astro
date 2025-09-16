@@ -12,7 +12,7 @@ const slides = getSlides()
   <p>Here you can find a list of all available slides:</p>
   {
     slides.map((slide) => (
-      <a href={`/${slide.id}`}>
+      <a href={`${import.meta.env.BASE_URL}${slide.id}`}>
         <h2>{slide.title}</h2>
         <p>{slide.description}</p>
         <small>{new Date(slide.publishedAt).toLocaleDateString()}</small>
