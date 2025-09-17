@@ -1,0 +1,119 @@
+---
+export const title = "AI in Development: Hype vs. Reality – Boosting Productivity?";
+export const authors = ["Oleksii Trotchenko"];
+export const publishedAt = "2025-09-17";
+export const description = "Exploring the Impact of AI on Developer Workflows - A data-driven analysis of AI's true productivity impact based on METR, Stanford, and Booking.com studies";
+---
+
+<section>
+  <section>
+    <h2>AI in Development: Hype vs. Reality</h2>
+    <h3>Boosting Productivity?</h3>
+    <p><em>Exploring the Impact of AI on Developer Workflows</em></p>
+    <br>
+    <p>Setting the stage for a critical look at AI's role in developer productivity, moving beyond sensational headlines to data-driven insights.</p>
+  </section>
+</section>
+
+<section>
+  <h2>The METR Study: A Surprising Discovery</h2>
+  <p><strong>Does AI truly boost developer productivity, or can it slow us down?</strong></p>
+  <ul>
+    <li>The non-profit Model Evaluation and Threat Research (METR) conducted a randomised controlled trial (RCT) with 16 experienced open-source developers</li>
+    <li>Developers worked on 136 real issues, with some tasks allowing AI tools (primarily Cursor Pro with Claude 3.5/3.7 Sonnet) and others not</li>
+    <li><strong>Surprising Result:</strong> Developers using AI tools took 19% longer to complete issues than those without</li>
+    <li><strong>Perception vs. Reality:</strong> Developers expected a 24% speedup with AI and still believed they were 20% faster, even after experiencing a slowdown</li>
+  </ul>
+  <p><em>Graph: Bar chart illustrating "Developer Forecasted Times" (optimistic) versus "Observed Implementation Times" (actual) for tasks completed with and without AI</em></p>
+</section>
+
+<section>
+  <h2>METR Study: Unpacking the Slowdown</h2>
+  <p><strong>Why did AI lead to a decrease in productivity in this study?</strong></p>
+  <ul>
+    <li>AI users spent less time on coding, researching, and testing</li>
+    <li>However, they spent more time on promoting, waiting for the AI, reviewing its output, and dealing with "IDE overhead"</li>
+    <li>This additional time spent interacting with the AI wiped out the time saved on other tasks, leading to an overall slowdown</li>
+    <li>One hypothesis suggests a high learning curve for AI-assisted development, impacting performance during adaptation</li>
+    <li>Another perspective highlights that context switching when interacting with AI can pull developers out of "the zone," hindering flow</li>
+  </ul>
+  <p><em>Graph: Stacked bar chart comparing time distribution for developers using AI vs. not using AI, across categories like "Coding," "Researching," "Testing," "Waiting on AI," "Reviewing AI Output," and "IDE Overhead"</em></p>
+</section>
+
+<section>
+  <h2>The Outlier: Learning How to Use AI Matters</h2>
+  <p><strong>Experience with AI tools significantly enhances effectiveness.</strong></p>
+  <ul>
+    <li>An analysis from The Pragmatic Engineer highlighted an outlier in the METR study: a single developer with over 50 hours of prior Cursor experience</li>
+    <li>This experienced AI user achieved a 38% increase in speed, notably outperforming developers without AI and the general AI-using group</li>
+    <li>This demonstrates that the learning curve for AI-assisted development is substantial, and familiarity with the tools can lead to significant productivity gains</li>
+    <li>Highly effective AI users, like this outlier (PhD student Quentin Anthony), understand which tasks are amenable to LLMs and how to aggressively time-box their AI interactions</li>
+  </ul>
+  <p><em>Graph: Bar chart comparing the average productivity change from the METR study (-19% for general AI users) with the productivity change of the single experienced AI user (+38%)</em></p>
+</section>
+
+<section>
+  <h2>Strategic AI Use: Practical Tips for Developers</h2>
+  <p><strong>Maximize AI benefits by understanding its nuances and adapting your workflow.</strong></p>
+  <ul>
+    <li><strong>Treat LLMs as tools, not magic bullets:</strong> Understand their specific strengths and limitations</li>
+    <li><strong>Recognize "spiky capability distributions":</strong> LLMs excel at tasks with abundant, clean data (e.g., writing tests, understanding unfamiliar code) but struggle with low-level or rare domain-specific code</li>
+    <li><strong>Time-box AI interactions:</strong> Avoid getting stuck in "rabbit holes" when the AI is "just so close" to a solution</li>
+    <li><strong>Productively use "AI waiting time":</strong> For high-focus tasks, work on subtasks or plan follow-up questions; for low-focus tasks, address emails or other small items</li>
+    <li><strong>Cultivate self-awareness:</strong> Understand your own pitfalls and adapt your workflow to overcome them and the AI's shortcomings</li>
+  </ul>
+  <p><em>Infographic: Visual summary with icons for "know limitations," "time-box," "multi-task during wait," and "self-reflect"</em></p>
+</section>
+
+<section>
+  <h2>Booking.com: Integrating AI for Organisational Impact</h2>
+  <p><strong>Proactive adoption strategies drive real-world productivity gains.</strong></p>
+  <ul>
+    <li>Booking.com made a concerted, organisation-wide effort to drive AI tool adoption</li>
+    <li>This included office hours, workshops, and training sessions to familiarise developers with the tools</li>
+    <li>As a result, they achieved 65% weekly/daily AI tool usage among their developers, which is well above the industry median (50%) and top quartile (60%)</li>
+    <li><strong>Key Insight:</strong> Adoption is crucial for realising the benefits of AI tools</li>
+    <li><strong>Beyond Code Generation:</strong> While code generation is a use case, Booking.com found that stack trace analysis and refactoring existing code were actually the top time-saving applications for AI</li>
+  </ul>
+  <p><em>Graph: Bar chart showing Booking.com's AI tool adoption rate (65%) against industry benchmarks (50% median, 60% top quartile). Secondary chart displaying top time-saving AI use cases: Stack Trace Analysis, Refactoring, and Code Generation</em></p>
+</section>
+
+<section>
+  <h2>Booking.com: AI-Targeted Documentation</h2>
+  <p><strong>Evolving documentation strategies to serve both humans and AI.</strong></p>
+  <ul>
+    <li>A crucial development is the shift towards creating documentation specifically for AI, in addition to human-readable docs</li>
+    <li>Human-focused documentation often relies on visual dependencies and narrative flow</li>
+    <li>AI-focused documentation requires clear coding examples, no visual dependencies, and provides information directly to AI assistants within the IDE</li>
+    <li>This creates a "flywheel effect": great AI-friendly documentation leads to better AI suggestions, successful implementation by developers, and more data to refine the AI</li>
+    <li>This approach also promotes cleaner interfaces and better overall system architecture, benefiting human developers as well</li>
+  </ul>
+  <p><em>Diagram: "AI Documentation Flywheel": (1) AI-friendly documentation feeds AI models → (2) AI provides accurate suggestions in the IDE → (3) Developers successfully implement solutions → (4) More successful code contributes to better AI training data</em></p>
+</section>
+
+<section>
+  <h2>The Stanford Study: Understanding AI's True Impact</h2>
+  <p><strong>AI tools are powerful, but their impact varies significantly based on context.</strong></p>
+  <ul>
+    <li>Stanford's extensive study (100,000+ engineers, millions of commits) indicates an average productivity boost of 15-20% from AI tools</li>
+    <li>However, much of this gain includes "rework" (altering recently written code), which can be wasteful</li>
+    <li><strong>Task Complexity & Project Maturity:</strong> AI provides 30-40% gains for low complexity greenfield tasks but only 0-10% for high complexity brownfield tasks</li>
+    <li><strong>Language Popularity:</strong> High popularity languages (Python, Java) yield 20% gains for low complexity and 10-15% for high complexity. Low popularity languages (Cobol, Haskell) show little benefit</li>
+    <li><strong>Codebase Size & Context Length:</strong> AI gains decrease sharply as codebase size increases due to context window limitations (e.g., Gemini 1.5 Pro performance decreased from 90% to 50% between 1k and 32k tokens)</li>
+  </ul>
+  <p><em>Graphs: Matrix showing productivity gains by task complexity/project maturity; Line graph showing productivity decline with codebase size; Line graph showing LLM performance drop with context length</em></p>
+</section>
+
+<section>
+  <h2>Conclusion: Strategic AI Adoption for Sustainable Productivity</h2>
+  <p><strong>AI is a tool, not a magic bullet. Strategic learning and application are paramount for realising its full benefits.</strong></p>
+  <ul>
+    <li><strong>Overall Potential:</strong> AI can increase developer productivity, with average gains around 15-20%, but it's not a universal solution</li>
+    <li><strong>The Learning Imperative:</strong> Investing in training and enablement is crucial. Developers need to learn how to effectively use AI tools</li>
+    <li><strong>Targeted Use Cases:</strong> Focus on AI's strengths in areas like stack trace analysis, refactoring, and boilerplate code</li>
+    <li><strong>Adaptive Workflows:</strong> Consider AI-friendly architectural changes and documentation to create an environment where AI tools can thrive</li>
+    <li><strong>Beyond Surface Metrics:</strong> Measure AI's impact on developer experience, cognitive load reduction, quality, and long-term stability</li>
+    <li><strong>Data Beats Hype:</strong> Continuous measurement and experimentation are key to understanding what truly works for your team and context</li>
+  </ul>
+  <p><em>Concluding infographic emphasising key factors: "Learning & Experience," "Strategic Use Cases," "Workflow Adaptation," "Data-Driven Measurement," "Context Matters"</em></p>
+</section>
